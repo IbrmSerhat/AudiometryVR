@@ -14838,25 +14838,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.29999998
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 0f7905cbfe27b3c4fb9289b4822f80fd, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!4 &1160675759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218165056669701201, guid: 2bfb778294b3d0746a0c1845c3391c1b, type: 3}
@@ -15960,25 +15941,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.29999998
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 94e8ce755d4fac94eb8e8fdd64c248c7, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!1 &1332090675
 GameObject:
   m_ObjectHideFlags: 0
@@ -23289,25 +23251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.29999998
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 2cd95286162c8aa429173f849b6ac3b6, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!1 &1931116156
 GameObject:
   m_ObjectHideFlags: 0
