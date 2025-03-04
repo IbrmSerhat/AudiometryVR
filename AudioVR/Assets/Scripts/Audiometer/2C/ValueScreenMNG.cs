@@ -8,8 +8,8 @@ public class ValueScreenMNG : MonoBehaviour
     //Value Texts
     public TextMeshPro[] TxtDbVal = new TextMeshPro[2];
     public TextMeshPro[] TxtFqVal = new TextMeshPro[2];
-    public GameObject TxtChVal = new GameObject[2];
-    public GameObject TxtPresentVal = new GameObject[2];
+    public GameObject[] TxtChVal = new GameObject[2];
+    public GameObject[] TxtPresentVal = new GameObject[2];
     //Value Variables
     private int[] DbVal = { 0, 60, 60 };
     private int[] FqPtr = { 0, 4, 4 }; private int[] FqVal = { 125, 250, 500, 750, 1000, 1500, 2000, 3000, 4000, 6000, 8000 };

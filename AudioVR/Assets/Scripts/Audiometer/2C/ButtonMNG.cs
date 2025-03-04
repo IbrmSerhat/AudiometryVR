@@ -50,7 +50,7 @@ public class ButtonMNG : MonoBehaviour
     public void Cont(int Ch)
     {
         ValueScreenMNG.Cont(Ch);
-        ContButton.OriginalColor = Color.blue;
+        ContButton[Ch].OriginalColor = Color.blue;
     }
 
 }
