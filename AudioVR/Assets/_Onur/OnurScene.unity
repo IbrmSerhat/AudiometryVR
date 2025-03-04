@@ -2652,7 +2652,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2442306273320644280, guid: 3df3e1220f2164f448701a6de8084f92, type: 3}
   m_PrefabInstance: {fileID: 6545633283778659966}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090703753}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25a07ef133a37d140a87cdf1f1c75fdf, type: 3}
@@ -2798,24 +2798,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.001, y: -0.004, z: 0.010000001}
   m_TimeToStationary: 0.5
---- !u!1 &2090703753 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4804964734930210078, guid: 3df3e1220f2164f448701a6de8084f92, type: 3}
-  m_PrefabInstance: {fileID: 6545633283778659966}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2090703757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090703753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20bb90ce7e8f6204baab60dbe5df6edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  simpleInteractable: {fileID: 0}
 --- !u!1 &2092139007
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,6 +3306,7 @@ GameObject:
   - component: {fileID: 6323188093083099331}
   - component: {fileID: 9123563481137412386}
   - component: {fileID: 6715095510533974045}
+  - component: {fileID: 9123563481137412387}
   m_Layer: 0
   m_Name: Cont2
   m_TagString: Untagged
@@ -3531,14 +3514,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Ear
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3946,6 +3929,7 @@ GameObject:
   - component: {fileID: 5278135865894042634}
   - component: {fileID: 4576229870917590236}
   - component: {fileID: 6747284105760686142}
+  - component: {fileID: 6747284105760686143}
   m_Layer: 0
   m_Name: WideB2
   m_TagString: Untagged
@@ -4924,6 +4908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!137 &202883326739594907
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -5404,6 +5389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &233807771579785524
 Transform:
   m_ObjectHideFlags: 0
@@ -8330,6 +8316,7 @@ GameObject:
   - component: {fileID: 1265295900736937862}
   - component: {fileID: 1751355468975603834}
   - component: {fileID: 4619984968033615546}
+  - component: {fileID: 7539502651011894425}
   m_Layer: 0
   m_Name: FqUp1
   m_TagString: Untagged
@@ -8753,6 +8740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &576094384682046448
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11240,6 +11228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &787771465192269681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11738,14 +11727,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Present
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12391,6 +12380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!33 &866300950409873136
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12718,6 +12708,7 @@ GameObject:
   - component: {fileID: 5008650080441344385}
   - component: {fileID: 7274916877362319420}
   - component: {fileID: 8179392991537209607}
+  - component: {fileID: 8179392991537209608}
   m_Layer: 0
   m_Name: EarR1
   m_TagString: Untagged
@@ -13486,6 +13477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1006577804541818959
 Transform:
   m_ObjectHideFlags: 0
@@ -14187,6 +14179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!137 &1056373924847469082
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -15008,6 +15001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1140596018989777004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15113,6 +15107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1152065088413102744
 Transform:
   m_ObjectHideFlags: 0
@@ -15236,6 +15231,7 @@ GameObject:
   - component: {fileID: 1193666333777705673}
   - component: {fileID: 4979871216112704312}
   - component: {fileID: 3064472815654918568}
+  - component: {fileID: 9108722912514979140}
   m_Layer: 0
   m_Name: EarL1
   m_TagString: Untagged
@@ -15691,6 +15687,7 @@ GameObject:
   - component: {fileID: 1894529981616133210}
   - component: {fileID: 8054665633403484232}
   - component: {fileID: 3157740735219564826}
+  - component: {fileID: 8054665633403484233}
   m_Layer: 0
   m_Name: Td2
   m_TagString: Untagged
@@ -15768,8 +15765,26 @@ MonoBehaviour:
   - {fileID: 705452815170513323}
   - {fileID: 237474539415476806}
   TxtFqVal:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5656628464562468331}
+  - {fileID: 3536005471001486082}
+  TxtChVal:
+  - {fileID: 5379000527704113867}
+  - {fileID: 3416598558228738339}
+  TxtPresentVal:
+  - {fileID: 8894619094197434977}
+  - {fileID: 5899362681059970052}
+  TxtMaskVal:
+  - {fileID: 1011999801009837567}
+  - {fileID: 6789533928150636219}
+  TxtTdVal:
+  - {fileID: 9091968119931037548}
+  - {fileID: 3198874112070123354}
+  TxtStimVal:
+  - {fileID: 3328765459879958778}
+  - {fileID: 3982401475902570364}
+  TxtEarVal:
+  - {fileID: 4949087145021298923}
+  - {fileID: 111635755468461440}
 --- !u!114 &1229535404436969703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16129,6 +16144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1274368467989071878
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16172,6 +16188,7 @@ GameObject:
   - component: {fileID: 4931144494140048924}
   - component: {fileID: 7788939265579475223}
   - component: {fileID: 1529096967390184067}
+  - component: {fileID: 7788939265579475224}
   m_Layer: 0
   m_Name: Cont1
   m_TagString: Untagged
@@ -16856,13 +16873,13 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Mask
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -17563,6 +17580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1470279098866480754
 GameObject:
   m_ObjectHideFlags: 0
@@ -17671,14 +17689,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Stim
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17936,6 +17954,7 @@ GameObject:
   - component: {fileID: 7883308095859191153}
   - component: {fileID: 6742080543301935879}
   - component: {fileID: 1274145687915783656}
+  - component: {fileID: 7883308095859191154}
   m_Layer: 0
   m_Name: DbUp2
   m_TagString: Untagged
@@ -18033,14 +18052,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Ear
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18085,6 +18104,7 @@ GameObject:
   - component: {fileID: 1451967050265157497}
   - component: {fileID: 4346796116515059832}
   - component: {fileID: 3968014157737041375}
+  - component: {fileID: 9217015310369366657}
   m_Layer: 0
   m_Name: EarL2
   m_TagString: Untagged
@@ -18184,6 +18204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1537053683179347980
 GameObject:
   m_ObjectHideFlags: 0
@@ -18770,14 +18791,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: FqDown
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18864,6 +18885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!224 &1624975949495520912
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19917,14 +19939,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: FqUp
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -20398,6 +20420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1827007827625661287
 GameObject:
   m_ObjectHideFlags: 0
@@ -20429,6 +20452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1829965644653485165
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21009,6 +21033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1887483159724761025
 Transform:
   m_ObjectHideFlags: 0
@@ -21164,14 +21189,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Td
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -22671,6 +22696,7 @@ GameObject:
   - component: {fileID: 6245258509366428799}
   - component: {fileID: 1604586844721511465}
   - component: {fileID: 7183749430501517431}
+  - component: {fileID: 7183749430501517432}
   m_Layer: 0
   m_Name: FqDown1
   m_TagString: Untagged
@@ -23333,14 +23359,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: ChangeChVal
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23882,6 +23908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2205407840743381723
 GameObject:
   m_ObjectHideFlags: 0
@@ -25155,6 +25182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &2422470658852265750
 Transform:
   m_ObjectHideFlags: 0
@@ -27169,6 +27197,7 @@ GameObject:
   - component: {fileID: 3882782132140913604}
   - component: {fileID: 5919266687035377520}
   - component: {fileID: 2745269201294663894}
+  - component: {fileID: 8986260141976621646}
   m_Layer: 0
   m_Name: DbDown1
   m_TagString: Untagged
@@ -27654,6 +27683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &2737346402629306292
 Transform:
   m_ObjectHideFlags: 0
@@ -27682,6 +27712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &2745269201294663894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27695,6 +27726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &2747772334519344111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27708,6 +27740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &2749926995802846742
 Transform:
   m_ObjectHideFlags: 0
@@ -27736,6 +27769,7 @@ GameObject:
   - component: {fileID: 8923758811993358266}
   - component: {fileID: 2958742299777674625}
   - component: {fileID: 7232410339127287861}
+  - component: {fileID: 9028781145268468896}
   m_Layer: 0
   m_Name: NoResponse
   m_TagString: Untagged
@@ -29025,6 +29059,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ValueScreenMNG: {fileID: 1225321601389750441}
+  ContButton:
+  - {fileID: 1529096967390184067}
+  - {fileID: 6715095510533974045}
+  MaskButton:
+  - {fileID: 8372063980864935941}
+  - {fileID: 785429729502666377}
+  MicButton: {fileID: 4300016954799437326}
+  PureButton:
+  - {fileID: 570276065629332482}
+  - {fileID: 3581209906101932939}
+  WideButton:
+  - {fileID: 3066458875593595549}
+  - {fileID: 6747284105760686142}
+  NarrowButton:
+  - {fileID: 3323327073258103164}
+  - {fileID: 2730799874418573439}
+  LeftEButton:
+  - {fileID: 3064472815654918568}
+  - {fileID: 3968014157737041375}
+  RightEButton:
+  - {fileID: 8179392991537209607}
+  - {fileID: 7874084668910795896}
+  BothEButton:
+  - {fileID: 1824447709415421308}
+  - {fileID: 5098287173827856627}
 --- !u!1 &2918229598036929322
 GameObject:
   m_ObjectHideFlags: 0
@@ -30916,6 +30975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &3066458875593595549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30929,6 +30989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &3066707767531840897
 GameObject:
   m_ObjectHideFlags: 0
@@ -30976,6 +31037,7 @@ GameObject:
   - component: {fileID: 3782317444532465689}
   - component: {fileID: 6684082235983043878}
   - component: {fileID: 5878565732222734457}
+  - component: {fileID: 8408449400944826872}
   m_Layer: 0
   m_Name: FqUp2
   m_TagString: Untagged
@@ -31165,14 +31227,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Stim
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -31612,6 +31674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &3162502919779529906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31818,6 +31881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &3178184519452372753
 GameObject:
   m_ObjectHideFlags: 0
@@ -32837,14 +32901,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Stim
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -33249,6 +33313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &3328765459879958778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33526,6 +33591,7 @@ GameObject:
   - component: {fileID: 499809751721569535}
   - component: {fileID: 3289127828639430840}
   - component: {fileID: 3323327073258103164}
+  - component: {fileID: 7210290311302765491}
   m_Layer: 0
   m_Name: NarrowB1
   m_TagString: Untagged
@@ -33931,14 +33997,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Mask
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -35415,6 +35481,7 @@ GameObject:
   - component: {fileID: 5998476599008942143}
   - component: {fileID: 7408232448933187182}
   - component: {fileID: 8853775291237828858}
+  - component: {fileID: 8853775291237828859}
   m_Layer: 0
   m_Name: Warble1
   m_TagString: Untagged
@@ -35477,6 +35544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &3530161715302570501
 GameObject:
   m_ObjectHideFlags: 0
@@ -36054,6 +36122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &3584103066643095201
 Transform:
   m_ObjectHideFlags: 0
@@ -38299,6 +38368,7 @@ GameObject:
   - component: {fileID: 1896827234344776663}
   - component: {fileID: 1360392374991023092}
   - component: {fileID: 8372063980864935941}
+  - component: {fileID: 8372063980864935942}
   m_Layer: 0
   m_Name: Mask1
   m_TagString: Untagged
@@ -38693,6 +38763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &3971689548101630980
 Transform:
   m_ObjectHideFlags: 0
@@ -39147,6 +39218,7 @@ GameObject:
   - component: {fileID: 5964671437287821033}
   - component: {fileID: 1986450270625988225}
   - component: {fileID: 5743951668181901388}
+  - component: {fileID: 7527737960027456646}
   m_Layer: 0
   m_Name: Mark
   m_TagString: Untagged
@@ -39969,6 +40041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &4129878653495275016
 Transform:
   m_ObjectHideFlags: 0
@@ -41027,6 +41100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &4222158289766366422
 GameObject:
   m_ObjectHideFlags: 0
@@ -42045,14 +42119,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: FqDown
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -42139,6 +42213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &4305911779706732191
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42262,6 +42337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &4333874297180788867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42554,14 +42630,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Ear
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -42585,6 +42661,7 @@ GameObject:
   - component: {fileID: 6704787038289922328}
   - component: {fileID: 7311010975572920647}
   - component: {fileID: 4300016954799437326}
+  - component: {fileID: 7311010975572920648}
   m_Layer: 0
   m_Name: Mic
   m_TagString: Untagged
@@ -43030,6 +43107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &4405677342798737676
 Transform:
   m_ObjectHideFlags: 0
@@ -43451,6 +43529,7 @@ GameObject:
   - component: {fileID: 8919847998682810222}
   - component: {fileID: 20313344655408507}
   - component: {fileID: 1824447709415421308}
+  - component: {fileID: 8919847998682810223}
   m_Layer: 0
   m_Name: EarB1
   m_TagString: Untagged
@@ -44265,14 +44344,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Stim
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -44682,6 +44761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!33 &4626136710287331627
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -45392,6 +45472,7 @@ GameObject:
   - component: {fileID: 2155695036941364195}
   - component: {fileID: 8556849468821648009}
   - component: {fileID: 229469142989018628}
+  - component: {fileID: 8556849468821648010}
   m_Layer: 0
   m_Name: Ch1
   m_TagString: Untagged
@@ -46673,14 +46754,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Present
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -47314,14 +47395,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Ear
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -48573,14 +48654,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: DbUp
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -48730,6 +48811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5098935606110661190
 GameObject:
   m_ObjectHideFlags: 0
@@ -48895,6 +48977,7 @@ GameObject:
   - component: {fileID: 6607674703064409734}
   - component: {fileID: 8152083848696523163}
   - component: {fileID: 7874084668910795896}
+  - component: {fileID: 8152083848696523164}
   m_Layer: 0
   m_Name: EarR2
   m_TagString: Untagged
@@ -50346,6 +50429,7 @@ GameObject:
   - component: {fileID: 3564305393867837621}
   - component: {fileID: 1892414099248591910}
   - component: {fileID: 8966159521465118813}
+  - component: {fileID: 8966159521465118814}
   m_Layer: 0
   m_Name: Td1
   m_TagString: Untagged
@@ -50588,6 +50672,7 @@ GameObject:
   - component: {fileID: 4090346783226295047}
   - component: {fileID: 8286794279825327420}
   - component: {fileID: 7702838855859079225}
+  - component: {fileID: 8286794279825327421}
   m_Layer: 0
   m_Name: Warble2
   m_TagString: Untagged
@@ -51465,6 +51550,7 @@ GameObject:
   - component: {fileID: 2602744643129202564}
   - component: {fileID: 4277194517554564839}
   - component: {fileID: 8049708761882930548}
+  - component: {fileID: 8049708761882930549}
   m_Layer: 0
   m_Name: FqDown2
   m_TagString: Untagged
@@ -51605,6 +51691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &5465004958642812627
 Transform:
   m_ObjectHideFlags: 0
@@ -51690,6 +51777,7 @@ GameObject:
   - component: {fileID: 8248450153630571529}
   - component: {fileID: 7558829010129497966}
   - component: {fileID: 3527688538450278083}
+  - component: {fileID: 8248450153630571530}
   m_Layer: 0
   m_Name: DbDown2
   m_TagString: Untagged
@@ -51732,6 +51820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!224 &5480493714406700433
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51764,6 +51853,7 @@ GameObject:
   - component: {fileID: 2131194578310301100}
   - component: {fileID: 4947882948300315787}
   - component: {fileID: 2421671515379384602}
+  - component: {fileID: 6879362369914127891}
   m_Layer: 0
   m_Name: Present2
   m_TagString: Untagged
@@ -51897,6 +51987,7 @@ GameObject:
   - component: {fileID: 5167407281833023454}
   - component: {fileID: 2138237879344883515}
   - component: {fileID: 9075316853554563734}
+  - component: {fileID: 9075316853554563735}
   m_Layer: 0
   m_Name: Ch2
   m_TagString: Untagged
@@ -52130,6 +52221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &5536767221683132091
 Transform:
   m_ObjectHideFlags: 0
@@ -53413,6 +53505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &5671079214554294610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54077,6 +54170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5746636991121829214
 GameObject:
   m_ObjectHideFlags: 0
@@ -55150,6 +55244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!224 &5879978433172247063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -55531,14 +55626,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: DbDown
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -56043,6 +56138,7 @@ GameObject:
   - component: {fileID: 760791528599060734}
   - component: {fileID: 1508868454878500009}
   - component: {fileID: 5098287173827856627}
+  - component: {fileID: 5972507717190777726}
   m_Layer: 0
   m_Name: EarB2
   m_TagString: Untagged
@@ -56050,6 +56146,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &5972507717190777726
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5972507717190777725}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5280328560369836038, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &5972584666092690410
 Transform:
   m_ObjectHideFlags: 0
@@ -59752,14 +59870,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Stim
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -61741,10 +61859,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4804964734930210078, guid: 3df3e1220f2164f448701a6de8084f92, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2090703757}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3df3e1220f2164f448701a6de8084f92, type: 3}
 --- !u!33 &6548380911585174371
 MeshFilter:
@@ -62751,14 +62866,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: FqUp
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -62999,6 +63114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &6715408321050298822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63355,14 +63471,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: DbUp
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -63410,6 +63526,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &6747284105760686143
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89504451920412004}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4529524283109666172, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!23 &6757462627941454240
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64305,6 +64444,7 @@ GameObject:
   - component: {fileID: 2847438388801376430}
   - component: {fileID: 6325490663306143326}
   - component: {fileID: 2730799874418573439}
+  - component: {fileID: 7019015310840385943}
   m_Layer: 0
   m_Name: NarrowB2
   m_TagString: Untagged
@@ -64873,6 +65013,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5481426008561947712}
+  m_Mesh: {fileID: -9026155364463262221, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
+--- !u!64 &6879362369914127891
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481426008561947712}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -9026155364463262221, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &6882449888481003916
 Transform:
@@ -65952,6 +66114,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 960089017063062125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7019015310840385943
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6806583292553966998}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8849623128070449534, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!23 &7020384380836324857
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67208,6 +67392,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &7183749430501517432
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050430561268899094}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2425885328825229046, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &7184655824267169577
 Transform:
   m_ObjectHideFlags: 0
@@ -67471,6 +67678,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 960089017063062125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7210290311302765491
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342633423798389993}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5056569521884629975, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &7214046230847807661
 GameObject:
   m_ObjectHideFlags: 0
@@ -67578,6 +67807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &7243628971940662587
 Transform:
   m_ObjectHideFlags: 0
@@ -67864,14 +68094,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Ear
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -68303,13 +68533,13 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Mic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -68321,6 +68551,28 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!64 &7311010975572920648
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4349932271448511080}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2388933311373982777, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!224 &7311450472308040586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -69509,14 +69761,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Stim
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -70635,6 +70887,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 960089017063062125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7527737960027456646
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014942774939872551}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3627603440693783397, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &7532566926913612497
 Transform:
   m_ObjectHideFlags: 0
@@ -70665,6 +70939,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 960089017063062125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7539502651011894425
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550941403657294535}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6632226017173944119, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!33 &7541832359385775548
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -70822,14 +71118,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: DbDown
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -71114,6 +71410,7 @@ GameObject:
   - component: {fileID: 3742899903327576771}
   - component: {fileID: 3096324217610813956}
   - component: {fileID: 570276065629332482}
+  - component: {fileID: 7794563871369419842}
   m_Layer: 0
   m_Name: Pure1
   m_TagString: Untagged
@@ -71649,6 +71946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &7707429303030729040
 GameObject:
   m_ObjectHideFlags: 0
@@ -72156,14 +72454,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Cont
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -72174,6 +72472,28 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!64 &7788939265579475224
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277811394760500427}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8640798940867185924, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!224 &7791084863615645387
 RectTransform:
   m_ObjectHideFlags: 0
@@ -72232,6 +72552,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 960089017063062125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7794563871369419842
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7607594317887854453}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -13198011075192669, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &7795194426343383030
 Transform:
   m_ObjectHideFlags: 0
@@ -72784,6 +73126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &7878461371636784260
 Transform:
   m_ObjectHideFlags: 0
@@ -72876,6 +73219,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7883308095859191154
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508062008648242093}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4675037665703847629, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &7890138092771709149
 GameObject:
   m_ObjectHideFlags: 0
@@ -72889,6 +73254,7 @@ GameObject:
   - component: {fileID: 990227437797114449}
   - component: {fileID: 1473318060680520583}
   - component: {fileID: 3581209906101932939}
+  - component: {fileID: 8884759538876252032}
   m_Layer: 0
   m_Name: Pure2
   m_TagString: Untagged
@@ -74555,6 +74921,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &8049708761882930549
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5437029859904445493}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4673940705304139746, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!114 &8050735317611711300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74752,14 +75141,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Td
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -74770,6 +75159,28 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!64 &8054665633403484233
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221935053778119685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8130605235924166793, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!23 &8056759206656982313
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75535,14 +75946,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Ear
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -75553,6 +75964,28 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!64 &8152083848696523164
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162607121455922670}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8043486603024932820, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!114 &8156594831730675496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75853,6 +76286,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &8179392991537209608
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917261208438032821}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -107284081136683970, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!33 &8184493729472352719
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -76285,6 +76741,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8248450153630571530
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5472780445079754554}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9193857513607778490, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &8254238868451015124
 GameObject:
   m_ObjectHideFlags: 0
@@ -76769,14 +77247,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Stim
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -76787,6 +77265,28 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!64 &8286794279825327421
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335881871551214878}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6679289703562662588, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &8295018090057579562
 Transform:
   m_ObjectHideFlags: 0
@@ -77247,6 +77747,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &8372063980864935942
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3901981435033353311}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5068344977188893451, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &8381546941022014722
 Transform:
   m_ObjectHideFlags: 0
@@ -77397,6 +77920,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3068901214359563322}
+  m_Mesh: {fileID: -8861388762798951902, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
+--- !u!64 &8408449400944826872
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068901214359563322}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -8861388762798951902, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &8411007629349258328
 Transform:
@@ -78187,14 +78732,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Stim
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -78420,6 +78965,7 @@ GameObject:
   - component: {fileID: 1542980464403461829}
   - component: {fileID: 815891578635671676}
   - component: {fileID: 1136858645768701248}
+  - component: {fileID: 8527864637572775098}
   m_Layer: 0
   m_Name: Present1
   m_TagString: Untagged
@@ -78427,6 +78973,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8527864637572775098
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527864637572775097}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5263592737527104077, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!33 &8539494482798216816
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -78567,14 +79135,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: ChangeChVal
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -78585,6 +79153,28 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!64 &8556849468821648010
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739558172648474228}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3157633185388330686, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!23 &8561914318990696823
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -79311,6 +79901,7 @@ GameObject:
   - component: {fileID: 4146033549527530597}
   - component: {fileID: 3363998722464191659}
   - component: {fileID: 785429729502666377}
+  - component: {fileID: 8625145394959183581}
   m_Layer: 0
   m_Name: Mask2
   m_TagString: Untagged
@@ -79318,6 +79909,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8625145394959183581
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8625145394959183580}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8604045607132181640, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &8630107267325828156
 GameObject:
   m_ObjectHideFlags: 0
@@ -80654,6 +81267,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &8853775291237828859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3522408379540188721}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3955288992839348285, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!224 &8854143585420860094
 RectTransform:
   m_ObjectHideFlags: 0
@@ -80886,6 +81522,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7890138092771709149}
   m_Mesh: {fileID: 5358915128574053833, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
+--- !u!64 &8884759538876252032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890138092771709149}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5358915128574053833, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!33 &8893979790038937275
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -80998,6 +81656,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8919847998682810223
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459628780512699850}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3537822678154702703, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &8921393855264801381
 GameObject:
   m_ObjectHideFlags: 0
@@ -81360,6 +82040,7 @@ GameObject:
   - component: {fileID: 3133738426779411953}
   - component: {fileID: 8510320655179079831}
   - component: {fileID: 3066458875593595549}
+  - component: {fileID: 8948973454173978159}
   m_Layer: 0
   m_Name: WideB1
   m_TagString: Untagged
@@ -81367,6 +82048,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8948973454173978159
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8948973454173978158}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6443314645571437240, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!64 &8951062988358455501
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81452,6 +82155,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &8966159521465118814
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5297867744233774754}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2913955625748782085, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!33 &8970421320405236514
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -81546,6 +82272,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 960089017063062125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8986260141976621646
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2682933502621990381}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8535494478040894547, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!224 &8992659379251448745
 RectTransform:
   m_ObjectHideFlags: 0
@@ -81985,6 +82733,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2751150478379534707}
   m_Mesh: {fileID: -9209363904545878673, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
+--- !u!64 &9028781145268468896
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751150478379534707}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9209363904545878673, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &9039455986571015854
 GameObject:
   m_ObjectHideFlags: 0
@@ -82197,6 +82967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &9070590404765425566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82406,6 +83177,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  StoredColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &9075316853554563735
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5503661438329998501}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2633259416434551598, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!4 &9075318056316017027
 Transform:
   m_ObjectHideFlags: 0
@@ -82671,6 +83465,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176831758956563760}
   m_Mesh: {fileID: -1726346430931955108, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
+--- !u!64 &9108722912514979140
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176831758956563760}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1726346430931955108, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &9110333980549321434
 GameObject:
   m_ObjectHideFlags: 0
@@ -82814,14 +83630,14 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Cont
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -82832,6 +83648,28 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!64 &9123563481137412387
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15207854845063350}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 811462577314028332, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &9123695099377172309
 GameObject:
   m_ObjectHideFlags: 0
@@ -83582,6 +84420,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 960089017063062125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &9217015310369366657
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518092260116250816}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3491270447604627110, guid: b18ba796f23158e4998d80cb02a860a1, type: 3}
 --- !u!1 &9219491089453866722
 GameObject:
   m_ObjectHideFlags: 0
