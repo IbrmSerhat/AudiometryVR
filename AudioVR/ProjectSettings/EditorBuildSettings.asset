@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/_Serhat/XRSecene.unity
+    guid: 2a19f1dbeb45c174ab9c0345aa000cd9
   - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: a61ea405edf733e428a2422c4ef10429
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Onur/OnurScene.unity
     guid: 9981ff2b7f69dcd49b2ffbbbe30ad8b6
   m_configObjects:
