@@ -9,6 +9,7 @@ public class ButtonMNG : MonoBehaviour
     public HighlightWhenHover[] MaskButton = new HighlightWhenHover[2];
     public HighlightWhenHover MicButton;
     public HighlightWhenHover[] PureButton = new HighlightWhenHover[2];
+    public HighlightWhenHover[] WarbleButton = new HighlightWhenHover[2];
     public HighlightWhenHover[] WideButton = new HighlightWhenHover[2];
     public HighlightWhenHover[] NarrowButton = new HighlightWhenHover[2];
     public HighlightWhenHover[,] StimButton;
@@ -23,16 +24,18 @@ public class ButtonMNG : MonoBehaviour
 
     void Start()
     {
-        StimButton = new HighlightWhenHover[2, 3] 
+        StimButton = new HighlightWhenHover[2, 4] 
         { 
-            { PureButton[1], WideButton[1], NarrowButton[1] }, 
-            { PureButton[2], WideButton[2], NarrowButton[2] } 
+            { PureButton[0], WarbleButton[0], WideButton[0], NarrowButton[0] }, 
+            { PureButton[1], WarbleButton[1], WideButton[1], NarrowButton[1] } 
         };
-        StimButton = new HighlightWhenHover[2, 3]
+        EarButton = new HighlightWhenHover[2, 3]
         {
-            { LeftEButton[1], RightEButton[1], BothEButton[1] },
-            { LeftEButton[2], RightEButton[2], BothEButton[2] }
+            { LeftEButton[0], RightEButton[0], BothEButton[0] },
+            { LeftEButton[1], RightEButton[1], BothEButton[1] }
         };
+        StimButton[0, 0].Hold(); StimButton[1, 0].Hold();
+        EarButton[0, 0].Hold(); EarButton[1, 1].Hold();
     }
 
     void Update()
@@ -73,7 +76,7 @@ public class ButtonMNG : MonoBehaviour
     public void Cont(int Ch)
     {
         ValueScreenMNG.Cont(Ch);
-        ContButton[Ch].Hold();
+        ContButton[Ch - 1].Hold();
     }
 
     public void Mic()
@@ -84,7 +87,7 @@ public class ButtonMNG : MonoBehaviour
     public void Mask(int Ch)
     {
         ValueScreenMNG.Mask(Ch);
-        MaskButton[Ch].Hold();
+        MaskButton[Ch - 1].Hold();
         CurrMask[Ch] = !CurrMask[Ch];
         if (CurrStim[Ch] < 2) Stim(Ch, CurrStim[Ch] + 2);
         else Stim(Ch, CurrStim[Ch] - 2);
@@ -132,7 +135,7 @@ public class ButtonMNG : MonoBehaviour
         else if ((WhichStim < 2) && (CurrMask[Ch])) return;
         else if ((1 < WhichStim) && (!CurrMask[Ch])) return;
         ValueScreenMNG.Stim(Ch, WhichStim);
-        StimButton[Ch, WhichStim].Hold(); StimButton[Ch, CurrStim[Ch]].Hold();
+        StimButton[Ch - 1, WhichStim].Hold(); StimButton[Ch - 1, CurrStim[Ch]].Hold();
         CurrStim[Ch] = WhichStim;
     }
 
@@ -165,7 +168,7 @@ public class ButtonMNG : MonoBehaviour
     {
         if (CurrEar[Ch] == WhichEar) return;
         ValueScreenMNG.Ear(Ch, WhichEar);
-        EarButton[Ch, WhichEar].Hold(); EarButton[Ch, CurrEar[Ch]].Hold();
+        EarButton[Ch - 1, WhichEar].Hold(); EarButton[Ch - 1, CurrEar[Ch]].Hold();
         CurrEar[Ch] = WhichEar;
     }
 
