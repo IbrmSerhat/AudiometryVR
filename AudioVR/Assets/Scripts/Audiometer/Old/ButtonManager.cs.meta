@@ -3,7 +3,21 @@ guid: 12de0b90e40f79f48b8a0db71dcf3754
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - TriggerAction: {instanceID: 0}
+  - AudiogramManager: {instanceID: 0}
+  - ValueScreenManager: {instanceID: 0}
+  - MarkManager: {instanceID: 0}
+  - PhoneManager: {instanceID: 0}
+  - LeftEar: {instanceID: 0}
+  - RightEar: {instanceID: 0}
+  - BothEar: {instanceID: 0}
+  - LeftPure: {instanceID: 0}
+  - LeftMarble: {instanceID: 0}
+  - LeftPulse: {instanceID: 0}
+  - RightPure: {instanceID: 0}
+  - RightMarble: {instanceID: 0}
+  - RightPulse: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

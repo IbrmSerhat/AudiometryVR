@@ -36,7 +36,7 @@ public class ValueScreenMNG : MonoBehaviour
             TxtDbVal[i - 1].text = DbVal[i].ToString();
             TxtFqVal[i - 1].text = FqVal[FqPtr[i]].ToString();
             TxtChVal[i - 1].SetActive(ChVal[i]);
-            TxtPresentVal[i - 1].SetActive(PresentVal[i]); if (!ContVal[i]) PresentVal[i] = false;
+            TxtPresentVal[i - 1].SetActive(PresentVal[i]);
             if (MaskVal[i]) TxtMaskVal[i - 1].text = "ON"; else TxtMaskVal[i - 1].text = "OFF";
             TxtTdVal[i - 1].text = TdVal[TdPtr[i]];
             TxtStimVal[i - 1].text = StimVal[StimPtr[i]];
@@ -54,9 +54,22 @@ public class ValueScreenMNG : MonoBehaviour
 
     public void ChangeChVal(int Ch) { ChVal[Ch] = !ChVal[Ch]; }
 
-    public void Present(int Ch) { PresentVal[Ch] = true; }
+    public void Present(int Ch) 
+    {
+        if (!ContVal[Ch])
+        {
+            PresentVal[Ch] = true;
+            //WAIT COMMAND
+            PresentVal[Ch] = false;
+        }
+    }
 
-    public void Cont(int Ch) { ContVal[Ch] = !ContVal[Ch]; }
+    public void Cont(int Ch) 
+    { 
+        ContVal[Ch] = !ContVal[Ch];
+        if(ContVal[Ch]) PresentVal[Ch] = true;
+        else PresentVal[Ch] = false;
+    }
 
     public void Mask(int Ch)
     {
