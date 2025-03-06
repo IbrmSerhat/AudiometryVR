@@ -2,14 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudiogramManager : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
+    /*
     public GameObject VerticalPin;
     public GameObject HorizontalPin;
     private float vertPtr = 4f, horzPtr = 8f, DBLeftCache = 8f, DBRightCache = 8f, SetDB;
     private string CurrentMode = "both";
     private string LR, DBorFQ;
-    public void FreqUp()
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+
+    public void FqUp()
     {
         if (3 <= vertPtr && vertPtr < 7)
         {
@@ -26,7 +38,8 @@ public class AudiogramManager : MonoBehaviour
             vertPtr++;
         }
     }
-    public void FreqDown()
+
+    public void FqDown()
     {
         if (3 < vertPtr)
         {
@@ -43,6 +56,7 @@ public class AudiogramManager : MonoBehaviour
             vertPtr--;
         }
     }
+
     public void DbUp(string LR)
     {
         if (CurrentMode == LR)
@@ -58,6 +72,7 @@ public class AudiogramManager : MonoBehaviour
         else if (LR == "left") { if (DBLeftCache < 15) { DBLeftCache++; } }
         else if (LR == "right") { if (DBRightCache < 15) { DBRightCache++; } }
     }
+
     public void DbDown(string LR)
     {
         if (CurrentMode == LR)
@@ -73,6 +88,7 @@ public class AudiogramManager : MonoBehaviour
         else if (LR == "left") { if (1 < DBLeftCache) { DBLeftCache--; } }
         else if (LR == "right") { if (1 < DBRightCache) { DBRightCache--; } }
     }
+
     public void ChangeMode(string newMode)
     {
         if (!(CurrentMode == newMode))
@@ -93,8 +109,19 @@ public class AudiogramManager : MonoBehaviour
             CurrentMode = newMode;
         }
     }
-    public void Set(float SetDB)
+
+    public void SetDB()
     {
+
+    }
+
+
+    public void Set(string DBorFQ, float Value)
+    {
+        if (DBorFQ == "DB")
+        {
+            
+        }
         if (horzPtr < SetDB) { while (horzPtr < SetDB) { DbUp(CurrentMode); } }
         else if (SetDB < horzPtr) { while (SetDB < horzPtr) { DbDown(CurrentMode); } }
         /*if(!(SetFq == 100f))
@@ -102,12 +129,11 @@ public class AudiogramManager : MonoBehaviour
             if (vertPtr < SetFq) { while (vertPtr < SetFq) { FreqUp(); } }
             else if (SetFq < vertPtr) { while (SetFq < vertPtr) { FreqDown(); } }
         }*/
-    }
+    /*}
     public float Get(string DBorFQ)
     {
         if (DBorFQ == "DB") { return horzPtr; }
         else if (DBorFQ == "FQ") { return vertPtr; }
         else { return 0; }
-    }
-    
+    }*/
 }
