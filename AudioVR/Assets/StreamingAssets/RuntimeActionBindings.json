@@ -1,1 +1,1 @@
-{"InputActionDefinitions": [],"InputActionSets": []}
+{"InputActionDefinitions": [{"InteractionProfile":"aaa","InputActionDefinitions":[{"ActionName":"bbb","Type":1,"Paths":["ccc"]}]}],"InputActionSets": []}
