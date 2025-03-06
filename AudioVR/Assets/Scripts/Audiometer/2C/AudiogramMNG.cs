@@ -2,64 +2,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class AudiogramMNG : MonoBehaviour
 {
-    /*
-    public GameObject VerticalPin;
-    public GameObject HorizontalPin;
-    private float vertPtr = 4f, horzPtr = 8f, DBLeftCache = 8f, DBRightCache = 8f, SetDB;
-    private string CurrentMode = "both";
-    private string LR, DBorFQ;
+    public GameObject VerticalPin, HorizontalPin;
+    private float vertPtr = 4f, horzPtr = 8f;
+    private int MainCh = 1;
 
-    void Start()
+    public void FqUp(int Ch)
     {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
-    public void FqUp()
-    {
-        if (3 <= vertPtr && vertPtr < 7)
+        if (MainCh == Ch)
         {
-            Vector3 newPosition = VerticalPin.transform.localPosition;
-            newPosition.x += 0.035f;
-            VerticalPin.transform.localPosition = newPosition;
-            vertPtr += 0.5f;
-        }
-        else if (vertPtr < 3)
-        {
-            Vector3 newPosition = VerticalPin.transform.localPosition;
-            newPosition.x += 0.07f;
-            VerticalPin.transform.localPosition = newPosition;
-            vertPtr++;
+            if (3 <= vertPtr && vertPtr < 7)
+            {
+                Vector3 newPosition = VerticalPin.transform.localPosition;
+                newPosition.x += 0.035f;
+                VerticalPin.transform.localPosition = newPosition;
+                vertPtr += 0.5f;
+            }
+            else if (vertPtr < 3)
+            {
+                Vector3 newPosition = VerticalPin.transform.localPosition;
+                newPosition.x += 0.07f;
+                VerticalPin.transform.localPosition = newPosition;
+                vertPtr++;
+            }
         }
     }
 
-    public void FqDown()
+    public void FqDown(int Ch)
     {
-        if (3 < vertPtr)
+        if (MainCh == Ch)
         {
-            Vector3 newPosition = VerticalPin.transform.localPosition;
-            newPosition.x -= 0.035f;
-            VerticalPin.transform.localPosition = newPosition;
-            vertPtr -= 0.5f;
-        }
-        else if (1 < vertPtr && vertPtr <= 3)
-        {
-            Vector3 newPosition = VerticalPin.transform.localPosition;
-            newPosition.x -= 0.07f;
-            VerticalPin.transform.localPosition = newPosition;
-            vertPtr--;
+            if (3 < vertPtr)
+            {
+                Vector3 newPosition = VerticalPin.transform.localPosition;
+                newPosition.x -= 0.035f;
+                VerticalPin.transform.localPosition = newPosition;
+                vertPtr -= 0.5f;
+            }
+            else if (1 < vertPtr && vertPtr <= 3)
+            {
+                Vector3 newPosition = VerticalPin.transform.localPosition;
+                newPosition.x -= 0.07f;
+                VerticalPin.transform.localPosition = newPosition;
+                vertPtr--;
+            }
         }
     }
 
-    public void DbUp(string LR)
+    public void DbUp(int Ch)
     {
-        if (CurrentMode == LR)
+        if (MainCh == Ch)
         {
             if (horzPtr < 15)
             {
@@ -69,13 +62,11 @@ public class NewBehaviourScript : MonoBehaviour
                 horzPtr++;
             }
         }
-        else if (LR == "left") { if (DBLeftCache < 15) { DBLeftCache++; } }
-        else if (LR == "right") { if (DBRightCache < 15) { DBRightCache++; } }
     }
 
-    public void DbDown(string LR)
+    public void DbDown(int Ch)
     {
-        if (CurrentMode == LR)
+        if (MainCh == Ch)
         {
             if (1 < horzPtr)
             {
@@ -85,55 +76,66 @@ public class NewBehaviourScript : MonoBehaviour
                 horzPtr--;
             }
         }
-        else if (LR == "left") { if (1 < DBLeftCache) { DBLeftCache--; } }
-        else if (LR == "right") { if (1 < DBRightCache) { DBRightCache--; } }
     }
 
-    public void ChangeMode(string newMode)
+    public void SetDB(float Value)
     {
-        if (!(CurrentMode == newMode))
+        if (horzPtr < Value) while (horzPtr < Value) DbUp(MainCh);
+        else if (Value < horzPtr) while (Value < horzPtr) DbDown(MainCh);
+    }
+
+    public void SetFQ(float Value)
+    {
+        if (vertPtr < Value) while (vertPtr < Value) FqUp(MainCh);
+        else if (Value < vertPtr) while (Value < vertPtr) FqDown(MainCh);
+    }
+
+    public void SetValues(bool Ch1, bool Ch2, bool Mask1, bool Mask2, int FqPtr1, int FqPtr2, int DbPtr1, int DbPtr2)
+    {
+        if (Ch1 ^ Ch2)
         {
-            if (CurrentMode == "both")
+            if (Ch1)
             {
-                if (newMode == "left") { Set(DBLeftCache); }
-                else if (newMode == "right") { Set(DBRightCache); }
+                SetDB(DbPtr1);
+                SetFQ(FqPtr1);
+                MainCh = 1;
             }
-            else if (CurrentMode == "left") { if (newMode == "right") { DBLeftCache = horzPtr; Set(DBRightCache); } }
-            else if (CurrentMode == "right") { if (newMode == "left") { DBRightCache = horzPtr; Set(DBLeftCache); } }
-            if (newMode == "both")
+            else
             {
-                if (CurrentMode == "left") { DBLeftCache = horzPtr; }
-                else if (CurrentMode == "right") { DBRightCache = horzPtr; }
-                Set(8f);
+                SetDB(DbPtr2);
+                SetFQ(FqPtr2);
+                MainCh = 2;
             }
-            CurrentMode = newMode;
+        }
+
+        else if (Ch1 && Ch2)
+        {
+            if (Mask1)
+            {
+                SetDB(DbPtr2);
+                SetFQ(FqPtr2);
+                MainCh = 2;
+            }
+            else if (Mask2)
+            {
+                SetDB(DbPtr1);
+                SetFQ(FqPtr1);
+                MainCh = 1;
+            }
+            else
+            {
+                SetDB(DbPtr1);
+                SetFQ(FqPtr1);
+                MainCh = 1;
+            }
+        }
+
+        else
+        {
+            SetDB(8f);
+            SetFQ(4f);
+            MainCh = 0;
         }
     }
 
-    public void SetDB()
-    {
-
-    }
-
-
-    public void Set(string DBorFQ, float Value)
-    {
-        if (DBorFQ == "DB")
-        {
-            
-        }
-        if (horzPtr < SetDB) { while (horzPtr < SetDB) { DbUp(CurrentMode); } }
-        else if (SetDB < horzPtr) { while (SetDB < horzPtr) { DbDown(CurrentMode); } }
-        /*if(!(SetFq == 100f))
-        {
-            if (vertPtr < SetFq) { while (vertPtr < SetFq) { FreqUp(); } }
-            else if (SetFq < vertPtr) { while (SetFq < vertPtr) { FreqDown(); } }
-        }*/
-    /*}
-    public float Get(string DBorFQ)
-    {
-        if (DBorFQ == "DB") { return horzPtr; }
-        else if (DBorFQ == "FQ") { return vertPtr; }
-        else { return 0; }
-    }*/
 }

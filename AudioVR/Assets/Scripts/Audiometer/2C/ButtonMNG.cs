@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonMNG : MonoBehaviour
 {
     public ValueScreenMNG ValueScreenMNG;
+    public AudiogramMNG AudiogramMNG;
     public HighlightWhenHover[] ContButton = new HighlightWhenHover[2];
     public HighlightWhenHover[] MaskButton = new HighlightWhenHover[2];
     public HighlightWhenHover MicButton;
@@ -46,21 +47,25 @@ public class ButtonMNG : MonoBehaviour
     public void DbUp(int Ch)
     {
         ValueScreenMNG.DbUp(Ch);
+        AudiogramMNG.DbUp(Ch);
     }
 
     public void DbDown(int Ch)
     {
         ValueScreenMNG.DbDown(Ch);
+        AudiogramMNG.DbDown(Ch);
     }
 
     public void FqUp(int Ch)
     {
         ValueScreenMNG.FqUp(Ch);
+        AudiogramMNG.FqUp(Ch);
     }
 
     public void FqDown(int Ch)
     {
         ValueScreenMNG.FqDown(Ch);
+        AudiogramMNG.FqDown(Ch);
     }
 
     public void ChangeChVal(int Ch)

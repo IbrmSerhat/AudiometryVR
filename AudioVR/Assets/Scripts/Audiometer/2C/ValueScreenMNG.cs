@@ -5,6 +5,7 @@ using TMPro;
 
 public class ValueScreenMNG : MonoBehaviour
 {
+    public AudiogramMNG AudiogramMNG;
     //Value Texts
     public TextMeshPro[] TxtDbVal = new TextMeshPro[2];
     public TextMeshPro[] TxtFqVal = new TextMeshPro[2];
@@ -53,7 +54,11 @@ public class ValueScreenMNG : MonoBehaviour
 
     public void FqDown(int Ch) { if (0 < FqPtr[Ch]) FqPtr[Ch]--; }
 
-    public void ChangeChVal(int Ch) { ChVal[Ch] = !ChVal[Ch]; }
+    public void ChangeChVal(int Ch) 
+    {
+        ChVal[Ch] = !ChVal[Ch];
+        AudiogramMNG.SetValues(ChVal[1], ChVal[2], MaskVal[1], MaskVal[2], FqPtr[1], FqPtr[2], (DbVal[1] + 20) / 10, (DbVal[2] + 20) / 10);
+    }
 
     public IEnumerator Present(int Ch) 
     {
@@ -74,6 +79,7 @@ public class ValueScreenMNG : MonoBehaviour
     public void Mask(int Ch)
     {
         MaskVal[Ch] = !MaskVal[Ch];
+        AudiogramMNG.SetValues(ChVal[1], ChVal[2], MaskVal[1], MaskVal[2], FqPtr[1], FqPtr[2], (DbVal[1] + 20) / 10, (DbVal[2] + 20) / 10);
     }
 
     public void Td(int Ch)
