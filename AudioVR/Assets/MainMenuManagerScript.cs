@@ -7,6 +7,9 @@ public class MainMenuManagerScript : MonoBehaviour
     public GameObject panel1;
     public GameObject panel2;
 
+    public GameObject panelMain1;
+    public GameObject panelMain2;
+
 
     public void ActivatePanel1()
     {
@@ -20,15 +23,40 @@ public class MainMenuManagerScript : MonoBehaviour
         panel2.SetActive(true);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void ActivatePanelMain1()
     {
-        
+        panelMain1.SetActive(true);
+        panelMain2.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ActivatePanelMain2()
     {
-        
+        panelMain1.SetActive(false);
+        panelMain2.SetActive(true);
+    }
+
+    public void StoryLine1()
+    {
+        Debug.Log("StoryLine1");
+    }
+
+    public void StoryLine2()
+    {
+        Debug.Log("StoryLine2");
+    }
+
+    public void StoryLine3()
+    {
+        Debug.Log("StoryLine3");
+    }
+    
+    public void XRLevel1()
+    {
+        Debug.Log("XRLevel1");
+    }
+
+    public void ExitButton()
+    {
+        Debug.Log("Exit");
     }
 }
