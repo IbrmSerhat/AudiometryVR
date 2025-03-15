@@ -5,7 +5,7 @@ using UnityEngine;
 public class MainCamera : MonoBehaviour
 {
     public AnimationManager AnimationManager;
-    public ValueScreenManager ValueScreenManager;
+    //public ValueScreenManager ValueScreenManager;
     public Collider FinishTrigger;
     void OnTriggerEnter(Collider other)
     {
@@ -14,14 +14,14 @@ public class MainCamera : MonoBehaviour
             other.enabled = false;
             AnimationManager.GoToCabin();
             FinishTrigger.enabled = true;
-            ValueScreenManager.TestStarted = true;
+            //ValueScreenManager.TestStarted = true;
         }
         else if (other.CompareTag("FinishTrigger"))
         {
             other.enabled = false;
             AnimationManager.Exit();
-            ValueScreenManager.TestStarted = false;
-            ValueScreenManager.GetResultFromAPI();
+            //ValueScreenManager.TestStarted = false;
+            //ValueScreenManager.GetResultFromAPI();
         }
     }
 }

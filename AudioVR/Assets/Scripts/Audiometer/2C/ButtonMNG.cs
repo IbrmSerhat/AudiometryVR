@@ -6,6 +6,8 @@ public class ButtonMNG : MonoBehaviour
 {
     public ValueScreenMNG ValueScreenMNG;
     public AudiogramMNG AudiogramMNG;
+    public MarkMNG MarkMNG;
+
     public HighlightWhenHover[] ContButton = new HighlightWhenHover[2];
     public HighlightWhenHover[] MaskButton = new HighlightWhenHover[2];
     public HighlightWhenHover MicButton;
@@ -175,6 +177,11 @@ public class ButtonMNG : MonoBehaviour
         ValueScreenMNG.Ear(Ch, WhichEar);
         EarButton[Ch - 1, WhichEar].Hold(); EarButton[Ch - 1, CurrEar[Ch]].Hold();
         CurrEar[Ch] = WhichEar;
+    }
+
+    public void Mark(bool didHear)
+    {
+        MarkMNG.Mark(didHear);
     }
 
 }
