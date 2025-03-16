@@ -24,6 +24,7 @@ public class ValueScreenMNG : MonoBehaviour
     private int[] TdPtr = { 0, 0, 0 }; private string[] TdVal = { "", "SUPRA", "BONE" };
     private int[] StimPtr = { 0, 0, 0 }; private string[] StimVal = { "PURE", "WARBLE", "WIDE BAND", "NARROW BAND" };
     private int[] EarPtr = { 0, 0, 1 }; private string[] EarVal = { "LEFT", "RIGHT", "BOTH" };
+    private int MainCh = 1;
 
     void Start()
     {
@@ -57,7 +58,7 @@ public class ValueScreenMNG : MonoBehaviour
     public void ChangeChVal(int Ch) 
     {
         ChVal[Ch] = !ChVal[Ch];
-        AudiogramMNG.SetValues(ChVal[1], ChVal[2], MaskVal[1], MaskVal[2], FqPtr[1], FqPtr[2], (DbVal[1] + 20) / 10, (DbVal[2] + 20) / 10);
+        AudiogramMNG.SetValues(FindMainCh(), (float)FqPtr[1] + 1f, (float)FqPtr[2] + 1f, ((float)DbVal[1] + 20f) / 10f, ((float)DbVal[2] + 20f) / 10f);
     }
 
     public IEnumerator Present(int Ch) 
@@ -65,7 +66,7 @@ public class ValueScreenMNG : MonoBehaviour
         if (!ContVal[Ch])
         {
             PresentVal[Ch] = true;
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(5f);
             PresentVal[Ch] = false;
         }
     }
@@ -79,7 +80,7 @@ public class ValueScreenMNG : MonoBehaviour
     public void Mask(int Ch)
     {
         MaskVal[Ch] = !MaskVal[Ch];
-        AudiogramMNG.SetValues(ChVal[1], ChVal[2], MaskVal[1], MaskVal[2], FqPtr[1], FqPtr[2], (DbVal[1] + 20) / 10, (DbVal[2] + 20) / 10);
+        AudiogramMNG.SetValues(FindMainCh(), (float)FqPtr[1] + 1f, (float)FqPtr[2] + 1f, ((float)DbVal[1] + 20f) / 10f, ((float)DbVal[2] + 20f) / 10f);
     }
 
     public void Td(int Ch)
@@ -97,5 +98,64 @@ public class ValueScreenMNG : MonoBehaviour
     {
         EarPtr[Ch] = WhichEar;
     }
+
+    private int FindMainCh()
+    {
+        if (ChVal[1] ^ ChVal[2])
+        {
+            if (ChVal[1]) MainCh = 1;
+            else MainCh = 2;
+        }
+
+        else if (ChVal[1] && ChVal[2])
+        {
+            if (!(MaskVal[1] && MaskVal[2]))
+            {
+                if (MaskVal[1]) MainCh = 2;
+                else if (MaskVal[2]) MainCh = 1;
+                else MainCh = 1;
+            }
+            else MainCh = 0;
+        }
+
+        else MainCh = 0;
+
+        return MainCh;
+    }
+
+    public int WhichIcon()
+    {
+        int IconNum = 0;
+        int SideCh = 0;
+
+        if (MainCh == 1) SideCh = 2;
+        else if (MainCh == 2) SideCh = 1;
+        else if (MainCh == 0) return 0;
+
+        if (EarPtr[MainCh] == 0) IconNum += 1;
+        else if (EarPtr[MainCh] == 1) IconNum += 2;
+        else return 0;
+
+        if (TdPtr[MainCh] == 0) IconNum += 8;
+        else if (TdPtr[MainCh] == 2) IconNum += 4;
+
+        if (ChVal[SideCh] && MaskVal[SideCh]) IconNum += 2;
+
+        if (10 < IconNum) return 0;
+        else return IconNum;
+    }
+    /*
+     * 0 OFF
+     * 1 Air Left 
+     * 2 Air Right
+     * 3 Air Left Mask
+     * 4 Air Right Mask
+     * 5 Bone Left 
+     * 6 Bone Right 
+     * 7 Bone Left Mask
+     * 8 Bone Right Mask
+     * 9 Speaker Left
+     * 10 Speaker Right
+     */
 
 }

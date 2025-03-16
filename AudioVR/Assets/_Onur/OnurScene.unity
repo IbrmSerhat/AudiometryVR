@@ -967,6 +967,73 @@ Transform:
   - {fileID: 1508915783}
   m_Father: {fileID: 3363880404482614913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &601575444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 601575445}
+  - component: {fileID: 601575446}
+  m_Layer: 0
+  m_Name: MarkMNG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &601575445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601575444}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7395377015870412565}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &601575446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601575444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ab8447cd1607243b874d79dbc342b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkObjects: {fileID: 9039455986571015854}
+  AudiogramMNG: {fileID: 1400767383}
+  ValueScreenMNG: {fileID: 1225321601389750441}
+  AirL: {fileID: 919132149155446097, guid: 09d4f0bc8b9a2e749b125e022d15d487, type: 3}
+  AirR: {fileID: 919132149155446097, guid: 7763faa4801d9de4ea349bfedfe69dd0, type: 3}
+  AirMaskL: {fileID: 919132149155446097, guid: 9e31441d371b60f4e8cc347d5f63c7f0, type: 3}
+  AirMaskR: {fileID: 919132149155446097, guid: 6cd88973613c6db4b8c743334399aeb1, type: 3}
+  BoneL: {fileID: 919132149155446097, guid: 6f3725cfab231d44899011f37d25f372, type: 3}
+  BoneR: {fileID: 919132149155446097, guid: 7e7ddb6d1b437614da3a10464cdcea78, type: 3}
+  BoneMaskL: {fileID: 919132149155446097, guid: 41981e1bffb9a544d9e5c6b2c9ec2d7b, type: 3}
+  BoneMaskR: {fileID: 919132149155446097, guid: fd23190cc8638ae4da74d5163d8265f2, type: 3}
+  SpeakerL: {fileID: 919132149155446097, guid: 15fe3396e1fdee84897b0f6a2bfae668, type: 3}
+  SpeakerR: {fileID: 919132149155446097, guid: 15fe3396e1fdee84897b0f6a2bfae668, type: 3}
+  NotAirL: {fileID: 919132149155446097, guid: b6d2b34d99895ae4ba6f0ebe6b6d3455, type: 3}
+  NotAirR: {fileID: 919132149155446097, guid: 3b5b551d72345ab4198391fbfed2b274, type: 3}
+  NotAirMaskL: {fileID: 919132149155446097, guid: 5653a4827f65ce247816cf6f96c52177, type: 3}
+  NotAirMaskR: {fileID: 919132149155446097, guid: 6c9cd1bf460efc142b3e2e315d6d39a4, type: 3}
+  NotBoneL: {fileID: 919132149155446097, guid: 5c820995ec49eb34f90dbf8098bd5cdd, type: 3}
+  NotBoneR: {fileID: 919132149155446097, guid: 88751926c89fd1c44a059908787e89ec, type: 3}
+  NotBoneMaskL: {fileID: 919132149155446097, guid: 638902ad00701ac41af0f4e6919f1889, type: 3}
+  NotBoneMaskR: {fileID: 919132149155446097, guid: b903cf48fc9f0ea429391beb4f358b26, type: 3}
+  NotSpeakerL: {fileID: 919132149155446097, guid: 89daac86050e8e942be218e8a689b46d, type: 3}
+  NotSpeakerR: {fileID: 919132149155446097, guid: 7f96dcf9eff3c3c4d90c746d22efb23c, type: 3}
 --- !u!1 &607651295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,7 +1566,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.29999998
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 0f7905cbfe27b3c4fb9289b4822f80fd, type: 2}
   m_BuildHeightMesh: 0
@@ -1788,7 +1855,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.29999998
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 94e8ce755d4fac94eb8e8fdd64c248c7, type: 2}
   m_BuildHeightMesh: 0
@@ -2544,7 +2611,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.29999998
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 2cd95286162c8aa429173f849b6ac3b6, type: 2}
   m_BuildHeightMesh: 0
@@ -5850,29 +5917,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 960089017063062125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &469227284807687720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7060644106645076601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f04cf3beab7dc2640815759c95591885, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MarkObjects: {fileID: 9039455986571015854}
-  AirLeftMask: {fileID: 919132149155446097, guid: 9e31441d371b60f4e8cc347d5f63c7f0, type: 3}
-  AirLeftMaskNot: {fileID: 919132149155446097, guid: 09d4f0bc8b9a2e749b125e022d15d487, type: 3}
-  AirRightMask: {fileID: 919132149155446097, guid: 6cd88973613c6db4b8c743334399aeb1, type: 3}
-  AirRightMaskNot: {fileID: 919132149155446097, guid: 7763faa4801d9de4ea349bfedfe69dd0, type: 3}
-  BoneLeftMask: {fileID: 919132149155446097, guid: 41981e1bffb9a544d9e5c6b2c9ec2d7b, type: 3}
-  BoneLeftMaskNot: {fileID: 919132149155446097, guid: 6f3725cfab231d44899011f37d25f372, type: 3}
-  BoneRightMask: {fileID: 919132149155446097, guid: fd23190cc8638ae4da74d5163d8265f2, type: 3}
-  BoneRightMaskNot: {fileID: 919132149155446097, guid: 7e7ddb6d1b437614da3a10464cdcea78, type: 3}
-  AudiogramManager: {fileID: 0}
-  ValueScreenManager: {fileID: 0}
 --- !u!4 &472988992915700782
 Transform:
   m_ObjectHideFlags: 0
@@ -12092,7 +12136,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13362,21 +13406,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.008, y: 0.35000005}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &1629159984123213628
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7060644106645076601}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7395377015870412565}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1630989575940156886
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15705,17 +15734,17 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Mark
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
@@ -20130,6 +20159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueScreenMNG: {fileID: 1225321601389750441}
   AudiogramMNG: {fileID: 1400767383}
+  MarkMNG: {fileID: 601575446}
   ContButton:
   - {fileID: 1529096967390184067}
   - {fileID: 6715095510533974045}
@@ -20677,13 +20707,13 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4607878097122556878}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 2917415141954770910}
+        m_TargetAssemblyTypeName: ButtonMNG, Assembly-CSharp
+        m_MethodName: Mark
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -39423,7 +39453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AnimationManager: {fileID: 6648372622440969335}
-  ValueScreenManager: {fileID: 0}
   FinishTrigger: {fileID: 6162577337014680076}
 --- !u!65 &6232745470979627651
 BoxCollider:
@@ -44814,23 +44843,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &7060644106645076601
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1629159984123213628}
-  - component: {fileID: 469227284807687720}
-  m_Layer: 0
-  m_Name: MarkManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &7068395077833657965
 GameObject:
   m_ObjectHideFlags: 0
@@ -46600,7 +46612,7 @@ Transform:
   - {fileID: 6936339757534847741}
   - {fileID: 1899812278586676126}
   - {fileID: 2422470658852265750}
-  - {fileID: 1629159984123213628}
+  - {fileID: 601575445}
   - {fileID: 1400767382}
   m_Father: {fileID: 5028720693450273379}
   m_LocalEulerAnglesHint: {x: 22, y: 90, z: 0}
