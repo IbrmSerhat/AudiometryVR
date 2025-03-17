@@ -6,6 +6,7 @@ using TMPro;
 public class ValueScreenMNG : MonoBehaviour
 {
     public AudiogramMNG AudiogramMNG;
+    public PhoneMNG PhoneMNG;
     //Value Texts
     public TextMeshPro[] TxtDbVal = new TextMeshPro[2];
     public TextMeshPro[] TxtFqVal = new TextMeshPro[2];
@@ -59,6 +60,7 @@ public class ValueScreenMNG : MonoBehaviour
     {
         ChVal[Ch] = !ChVal[Ch];
         AudiogramMNG.SetValues(FindMainCh(), (float)FqPtr[1] + 1f, (float)FqPtr[2] + 1f, ((float)DbVal[1] + 20f) / 10f, ((float)DbVal[2] + 20f) / 10f);
+        PhoneMNG.UpdatePhone(MainCh, TdPtr[MainCh]);
     }
 
     public IEnumerator Present(int Ch) 
@@ -81,12 +83,14 @@ public class ValueScreenMNG : MonoBehaviour
     {
         MaskVal[Ch] = !MaskVal[Ch];
         AudiogramMNG.SetValues(FindMainCh(), (float)FqPtr[1] + 1f, (float)FqPtr[2] + 1f, ((float)DbVal[1] + 20f) / 10f, ((float)DbVal[2] + 20f) / 10f);
+        PhoneMNG.UpdatePhone(MainCh, TdPtr[MainCh]);
     }
 
     public void Td(int Ch)
     {
         TdPtr[Ch]++;
         if (TdPtr[Ch] == 3) TdPtr[Ch] = 0;
+        PhoneMNG.UpdatePhone(MainCh, TdPtr[MainCh]);
     }
 
     public void Stim(int Ch, int WhichStim)
