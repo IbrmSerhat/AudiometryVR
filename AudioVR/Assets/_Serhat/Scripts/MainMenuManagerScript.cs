@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManagerScript : MonoBehaviour
 {
@@ -38,16 +39,22 @@ public class MainMenuManagerScript : MonoBehaviour
     public void StoryLine1()
     {
         Debug.Log("StoryLine1");
+        SceneData.myValue = 1; 
+        SceneManager.LoadScene("OnurScene");
     }
 
     public void StoryLine2()
     {
         Debug.Log("StoryLine2");
+        SceneData.myValue = 2; 
+        SceneManager.LoadScene("OnurScene");
     }
 
     public void StoryLine3()
     {
         Debug.Log("StoryLine3");
+        SceneData.myValue = 3; 
+        SceneManager.LoadScene("OnurScene");
     }
     
     public void XRLevel1()
