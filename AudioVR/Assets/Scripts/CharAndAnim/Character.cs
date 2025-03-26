@@ -5,6 +5,7 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     Animator animator;
+    public AnimationManager AnimationManager;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -20,6 +21,7 @@ public class Character : MonoBehaviour
         {
             animator.SetTrigger("SitDown2");
             transform.rotation = Quaternion.Euler(0, 310, 0);
+            AnimationManager.CloseDoor();
         }
         transform.position = other.transform.position;
         other.enabled = false;

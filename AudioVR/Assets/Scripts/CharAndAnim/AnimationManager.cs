@@ -8,6 +8,7 @@ public class AnimationManager : MonoBehaviour
     public Transform OfficePatientChair, CabinChair, Door;
     public NavMeshAgent agent;
     public Animator animator;
+    public GameObject DoorClosed, DoorOpened;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class AnimationManager : MonoBehaviour
     {
         animator.SetTrigger("kapiyaGit");
         agent.SetDestination(Door.position);
+        OpenDoor();
     }
     public void HandUp()
     {
@@ -33,5 +35,17 @@ public class AnimationManager : MonoBehaviour
     {
         animator.SetTrigger("yavasEl");
         animator.SetTrigger("SitDown");
+    }
+
+    public void OpenDoor()
+    {
+        DoorClosed.SetActive(false);
+        DoorOpened.SetActive(true);
+    }
+
+    public void CloseDoor()
+    {
+        DoorClosed.SetActive(true);
+        DoorOpened.SetActive(false);
     }
 }
