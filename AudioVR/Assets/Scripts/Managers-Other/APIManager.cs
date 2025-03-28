@@ -1,4 +1,4 @@
-using Newtonsoft.Json;
+ï»¿using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections;
@@ -30,8 +30,8 @@ public class APIManager : MonoBehaviour
         ResultValueObj.GetComponent<TextMeshPro>().text = ResultValue;
     }
     // Asenkron POST fonksiyonu
-    //El animasyonlarý için
-    //Play tuþuna basýldýðýnda çalýþacak fonksiyon
+    //El animasyonlarï¿½ iï¿½in
+    //Play tuï¿½una basï¿½ldï¿½ï¿½ï¿½nda ï¿½alï¿½ï¿½acak fonksiyon
     public async Task<string> PostToAPI(string sessionId, int decibel, string earSide, int frequency, string message, int patientId, string testType)
     {
         string url = baseUrl + "pretend/" + sessionId;
@@ -73,8 +73,8 @@ public class APIManager : MonoBehaviour
     }
 
     // Asenkron PUT fonksiyonu
-    // API ye gönderilecek data iþlemlerinde kullanýlýyor
-    //Odyogram üzerinde bir frekans ve desibel deðerine iþaret konulduðu vakit API ye o noktanýn deðerlerini gönderiyor
+    // API ye gï¿½nderilecek data iï¿½lemlerinde kullanï¿½lï¿½yor
+    //Odyogram ï¿½zerinde bir frekans ve desibel deï¿½erine iï¿½aret konulduï¿½u vakit API ye o noktanï¿½n deï¿½erlerini gï¿½nderiyor
     public async Task<bool> PutAudiogram(string sessionId, int decibel, string earSide, int frequency, string testType)
     {
         string url = baseUrl + "audiogram/" + sessionId;
@@ -112,7 +112,7 @@ public class APIManager : MonoBehaviour
     }
 
     // Asenkron GET fonksiyonu
-    //API üzerinden iþaret konulan noktalarýn deðerlerini döndür.
+    //API ï¿½zerinden iï¿½aret konulan noktalarï¿½n deï¿½erlerini dï¿½ndï¿½r.
     public async Task<string> GetAudiogram(string sessionId)
     {
         string url = baseUrl + "audiogram/" + sessionId;
@@ -139,7 +139,7 @@ public class APIManager : MonoBehaviour
         }
     }
 
-    // API ye gönderilen odyogram tablosu sonucu LLM çýktýsýný döndür
+    // API ye gï¿½nderilen odyogram tablosu sonucu LLM ï¿½ï¿½ktï¿½sï¿½nï¿½ dï¿½ndï¿½r
     public async Task<string> PostTeach(int sessionId, int patientId)
     {
         string url = baseUrl + "teach/" + sessionId;
@@ -149,23 +149,23 @@ public class APIManager : MonoBehaviour
             patient_id = patientId
         };
 
-        // JSON formatýna serileþtirme
+        // JSON formatï¿½na serileï¿½tirme
         var json = JsonConvert.SerializeObject(postData);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        // POST isteði gönderme
+        // POST isteï¿½i gï¿½nderme
         HttpResponseMessage response = await client.PostAsync(url, content);
 
-        // Baþarý durumunu kontrol et
+        // Baï¿½arï¿½ durumunu kontrol et
         response.EnsureSuccessStatusCode();
 
-        // Yanýtý okuma
+        // Yanï¿½tï¿½ okuma
         string responseBody = await response.Content.ReadAsStringAsync();
         return responseBody;
     }
 
 
-    // API isteði modeli
+    // API isteï¿½i modeli
     public class ApiRequest
     {
         public int decibel { get; set; }
@@ -176,7 +176,7 @@ public class APIManager : MonoBehaviour
         public string test_type { get; set; }
     }
 
-    // Audiogram PUT isteði modeli
+    // Audiogram PUT isteï¿½i modeli
     public class AudiogramRequest
     {
         public int decibel { get; set; }
@@ -185,15 +185,15 @@ public class APIManager : MonoBehaviour
         public string test_type { get; set; }
     }
 
-    //Bu fonksiyon Play tuþu içine atýlacak
-    // API'ye POST isteði gönder ve animasyonu tetikle
+    //Bu fonksiyon Play tuï¿½u iï¿½ine atï¿½lacak
+    // API'ye POST isteï¿½i gï¿½nder ve animasyonu tetikle
 
     public async void PostAndTriggerAnimationAsync(string sessionId, int decibel, string earSide, int frequency, string testType)
     {
-        // Asenkron API çaðrýsýný baþlat
+        // Asenkron API ï¿½aï¿½rï¿½sï¿½nï¿½ baï¿½lat
         var apiResponse = await PostToAPI(sessionId, decibel, earSide, frequency, "", 1, testType);
 
-        // Gelen cevaba göre animasyonu tetikle
+        // Gelen cevaba gï¿½re animasyonu tetikle
         if (apiResponse.Contains("\"did_fake\":true"))
         {
             AnimationManager.HandSlow();
@@ -218,7 +218,7 @@ public class APIManager : MonoBehaviour
         }
     }
 
-    // GET isteði için Coroutine
+    // GET isteï¿½i iï¿½in Coroutine
     public IEnumerator HandleGetRequest(string sessionId)
     {
         Task<string> getTask = GetAudiogram(sessionId);
@@ -230,7 +230,7 @@ public class APIManager : MonoBehaviour
     public IEnumerator CallPostTeach()
     {
 
-        // PostTeach metodunu çaðýrma
+        // PostTeach metodunu ï¿½aï¿½ï¿½rma
         Task<string> responseTask = PostTeach(1, 1);
         yield return new WaitUntil(() => responseTask.IsCompleted);
 
@@ -239,16 +239,16 @@ public class APIManager : MonoBehaviour
         UnityEngine.Debug.Log("API Response: " + responseTask.Result);
         ResultValue = responseTask.Result;
         //string soundText = ResultValue;
-        string soundText = "Bu bir test mesajýdýr. Her ne kadar bu mesaj hazýr olsa da anlýk olarak yapay zeka sistemine gönderilip tekrardan seslendirilmektedir. Projenin ilerleyen süreçlerinde bu kýsýmda önünüzde görmüþ olduðunuz sonuç yazýsýný duyacaksýnýz.";
+        string soundText = "That is a test message. In the future, you will hear the result message here. But for now that means audio system is working.";
         //string soundText ="As your teacher, I'd like to guide you on how to interpret the patient's data.Firstly, it seems like you're trying to report a blank or unknown audiogram for both ears. However, in an actual clinical setting, we always collect data from both ears.Let's assume the patient is Seda Karan, and she told you that she has difficulty hearing high-pitched sounds clearly. This information might give us a hint about her possible hearing issues.Before we proceed, I just want to confirm: did you conduct the audiometry test with air conduction and bone conduction separately? Or were they both missing in your report?Also, based on Seda's statement that she has difficulty hearing high-pitched sounds, do you think there might be a specific frequency range where her thresholds could be higher than normal?Let's discuss further to improve your understanding of audiometry testing.";
         FetchAndPlayAudio(soundText);
     }
 
 
-    public AudioSource audioSource; // Sesin oynatýlacaðý AudioSource
+    public AudioSource audioSource; // Sesin oynatï¿½lacaï¿½ï¿½ AudioSource
 
-    // Bilgisayardaki API endpoint'i (örneðin, bilgisayarýn IP adresi)
-    private string apiUrl = "http://10.20.0.93:5000/synthesize_file"; // IP'yi güncelleyin
+    // Bilgisayardaki API endpoint'i (ï¿½rneï¿½in, bilgisayarï¿½n IP adresi)
+    private string apiUrl = "http://10.20.0.93:5000/synthesize_file"; // IP'yi gï¿½ncelleyin
 
     public void FetchAndPlayAudio(string textToSynthesize)
     {
@@ -273,11 +273,11 @@ public class APIManager : MonoBehaviour
         }
         else
         {
-            // Ses dosyasýný temp olarak kaydet
+            // Ses dosyasï¿½nï¿½ temp olarak kaydet
             string filePath = Application.persistentDataPath + "/temp_audio.wav";
             System.IO.File.WriteAllBytes(filePath, request.downloadHandler.data);
 
-            // Temp dosyayý AudioSource ile oynat
+            // Temp dosyayï¿½ AudioSource ile oynat
             StartCoroutine(PlayAudioFromFile(filePath));
         }
     }
