@@ -7,6 +7,7 @@ public class ValueScreenMNG : MonoBehaviour
 {
     public AudiogramMNG AudiogramMNG;
     public PhoneMNG PhoneMNG;
+    public APIManager APIManager;
     //Value Texts
     public TextMeshPro[] TxtDbVal = new TextMeshPro[2];
     public TextMeshPro[] TxtFqVal = new TextMeshPro[2];
@@ -162,4 +163,36 @@ public class ValueScreenMNG : MonoBehaviour
      * 10 Speaker Right
      */
 
+    public void MarkToAPI()
+    {
+        FindMainCh();
+
+        string EarForAPI = "", PhoneForAPI = "";
+
+        switch (EarPtr[MainCh])
+        {
+            case 0:
+                EarForAPI = "left";
+                break;
+            case 1:
+                EarForAPI = "right";
+                break;
+            case 2:
+                return;
+        }
+
+        switch (TdPtr[MainCh])
+        {
+            case 0:
+                return;
+            case 1:
+                PhoneForAPI = "air";
+                break;
+            case 2:
+                PhoneForAPI = "bone";
+                break;
+        }
+
+        StartCoroutine(APIManager.HandlePutRequest("1", DbVal[MainCh], EarForAPI, FqVal[FqPtr[MainCh]], PhoneForAPI));
+    }
 }

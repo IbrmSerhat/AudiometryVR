@@ -182,6 +182,7 @@ public class ButtonMNG : MonoBehaviour
     public void Mark(bool didHear)
     {
         MarkMNG.Mark(didHear);
+        if (didHear) ValueScreenMNG.MarkToAPI();
     }
 
 }

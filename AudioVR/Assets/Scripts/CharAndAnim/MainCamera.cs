@@ -5,7 +5,7 @@ using UnityEngine;
 public class MainCamera : MonoBehaviour
 {
     public AnimationManager AnimationManager;
-    //public ValueScreenManager ValueScreenManager;
+    public APIManager APIManager;
     public Collider FinishTrigger;
     void OnTriggerEnter(Collider other)
     {
@@ -20,8 +20,8 @@ public class MainCamera : MonoBehaviour
         {
             other.enabled = false;
             AnimationManager.Exit();
-            //ValueScreenManager.TestStarted = false;
-            //ValueScreenManager.GetResultFromAPI();
+            StartCoroutine(APIManager.HandleGetRequest("1"));
+            StartCoroutine(APIManager.CallPostTeach(SceneData.myValue));
         }
     }
 }

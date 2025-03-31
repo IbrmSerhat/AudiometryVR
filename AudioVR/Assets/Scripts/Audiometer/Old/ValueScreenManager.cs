@@ -183,6 +183,6 @@ public class ValueScreenManager : MonoBehaviour
     public void GetResultFromAPI()
     {
         StartCoroutine(APIManager.HandleGetRequest("1"));
-        StartCoroutine(APIManager.CallPostTeach());
+        StartCoroutine(APIManager.CallPostTeach(1));
     }
 }

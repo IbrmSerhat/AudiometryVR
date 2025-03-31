@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections;
@@ -17,17 +17,20 @@ public class APIManager : MonoBehaviour
     private static readonly HttpClient client = new HttpClient();
     private string baseUrl = "http://127.0.0.1:8000/";
     public AnimationManager AnimationManager;
-    public GameObject ResultValueObj;
-    string ResultValue;
+    public GameObject ResultValueObj1, ResultValueObj2, ResultValueObj3;
+    string[] ResultValue;
 
     void Start()
     {
         client.Timeout = TimeSpan.FromSeconds(240);
+        ResultValue = new string[3] {"", "", ""};
     }
 
     void Update()
     {
-        ResultValueObj.GetComponent<TextMeshPro>().text = ResultValue;
+        ResultValueObj1.GetComponent<TextMeshPro>().text = ResultValue[0];
+        ResultValueObj2.GetComponent<TextMeshPro>().text = ResultValue[1];
+        ResultValueObj3.GetComponent<TextMeshPro>().text = ResultValue[2];
     }
     // Asenkron POST fonksiyonu
     //El animasyonlar� i�in
@@ -140,7 +143,7 @@ public class APIManager : MonoBehaviour
     }
 
     // API ye g�nderilen odyogram tablosu sonucu LLM ��kt�s�n� d�nd�r
-    public async Task<string> PostTeach(int sessionId, int patientId)
+    public async Task<string[]> PostTeach(int sessionId, int patientId)
     {
         string url = baseUrl + "teach/" + sessionId;
 
@@ -149,19 +152,21 @@ public class APIManager : MonoBehaviour
             patient_id = patientId
         };
 
-        // JSON format�na serile�tirme
+        // JSON formatına serileştirme
         var json = JsonConvert.SerializeObject(postData);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        // POST iste�i g�nderme
+        // POST isteği gönderme
         HttpResponseMessage response = await client.PostAsync(url, content);
 
-        // Ba�ar� durumunu kontrol et
+        // Başarı durumunu kontrol et
         response.EnsureSuccessStatusCode();
 
-        // Yan�t� okuma
+        // Yanıtı okuma ve string array'e dönüştürme
         string responseBody = await response.Content.ReadAsStringAsync();
-        return responseBody;
+        string[] responseArray = JsonConvert.DeserializeObject<string[]>(responseBody);
+
+        return responseArray; // 3 elemanlı bir string dizisi döndürmeli.
     }
 
 
@@ -227,11 +232,11 @@ public class APIManager : MonoBehaviour
         UnityEngine.Debug.Log("GET response: " + getTask.Result);
     }
 
-    public IEnumerator CallPostTeach()
+    public IEnumerator CallPostTeach(int PID)
     {
 
         // PostTeach metodunu �a��rma
-        Task<string> responseTask = PostTeach(1, 1);
+        Task<string[]> responseTask = PostTeach(1, PID);
         yield return new WaitUntil(() => responseTask.IsCompleted);
 
         print(responseTask.Result);
@@ -239,7 +244,7 @@ public class APIManager : MonoBehaviour
         UnityEngine.Debug.Log("API Response: " + responseTask.Result);
         ResultValue = responseTask.Result;
         //string soundText = ResultValue;
-        string soundText = "That is a test message. In the future, you will hear the result message here. But for now that means audio system is working.";
+        string soundText = "Bu bir test mesaj�d�r. Her ne kadar bu mesaj haz�r olsa da anl�k olarak yapay zeka sistemine g�nderilip tekrardan seslendirilmektedir. Projenin ilerleyen s�re�lerinde bu k�s�mda �n�n�zde g�rm�� oldu�unuz sonu� yaz�s�n� duyacaks�n�z.";
         //string soundText ="As your teacher, I'd like to guide you on how to interpret the patient's data.Firstly, it seems like you're trying to report a blank or unknown audiogram for both ears. However, in an actual clinical setting, we always collect data from both ears.Let's assume the patient is Seda Karan, and she told you that she has difficulty hearing high-pitched sounds clearly. This information might give us a hint about her possible hearing issues.Before we proceed, I just want to confirm: did you conduct the audiometry test with air conduction and bone conduction separately? Or were they both missing in your report?Also, based on Seda's statement that she has difficulty hearing high-pitched sounds, do you think there might be a specific frequency range where her thresholds could be higher than normal?Let's discuss further to improve your understanding of audiometry testing.";
         FetchAndPlayAudio(soundText);
     }
